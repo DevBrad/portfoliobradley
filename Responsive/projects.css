@@ -1,0 +1,402 @@
+@media only screen and (max-width: 415px) { 
+
+
+    main{
+        width: 97%;
+        margin: 1rem auto;
+        background-color: white;
+        box-shadow: 0 0 20px 10px var(--main-1);
+      }
+
+/*===== header code =====*/
+.container_logo{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid var(--main-2);
+    margin: 3rem 0 0 0 ;
+    transition: transform 400ms ease-in;
+    position: relative;
+  }
+    
+  .logo-content{
+    font-weight: 500;
+    font-size: 12px;
+  }
+  
+  
+  header {
+    width: 85%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+      Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-size: var(--main-font-size);
+    margin: 0 auto 100px auto;
+  }
+  
+  nav {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+  }
+  
+  ul {
+ 
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* background-color: red; */
+  }
+  
+  li {
+    list-style-type: none;
+    cursor: pointer;
+  }
+  
+  li a {
+    text-decoration: none;
+    color: var(--accents-4);
+    font-size: 0.8rem;
+    margin-right: 0.1rem;
+  }
+  
+  .item_1 {
+    flex: 6;
+    align-self: flex-end;
+    position: relative;
+  }
+  .item_1::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -0.2rem;
+    width: 55%;
+    height: 1px;
+    background-color: var(--main-2);
+    transition: transform 400ms ease-in;
+  }
+  
+  
+  .active {
+    color: var(--main-2);
+    font-weight: 600;
+  }
+  
+  .item_2 {
+    flex: 5;
+    align-self: flex-end;
+    position: relative;
+  }
+  
+  .item_2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -0.2rem;
+    width: 65%;
+    height: 1px;
+    background-color: var(--main-2);
+    transition: transform 400ms ease-in;
+  }
+  
+  
+  .item_3 {
+    flex: 6;
+    align-self: flex-end;
+    position: relative;
+  }
+  
+  .item_3::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -0.2rem;
+    width: 68%;
+    height: 1px;
+    background-color: var(--main-2);
+    transition: transform 400ms ease-in;
+  }
+  
+
+  
+  .item_4 {
+    flex: 4;
+    align-self: flex-end;
+    position: relative;
+  }
+  
+  .item_4::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -0.2rem;
+    width: 100%;
+    height: 1px;
+    background-color: var(--main-2);
+    transition: transform 400ms ease-in;
+  }
+  
+  
+  .email_me_btn {
+    align-self: center;
+    padding: 0.3rem;
+    margin-left: -90px;
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid var(--main-1);
+    letter-spacing: 0.03rem;
+    font-weight: 500;
+    border-radius: 1rem;
+    outline: none;
+    font-size: 0.5rem;
+    transition: background-color 300ms ease-in;
+    display: none;
+  }
+  
+  .email_me_btn a {
+    text-decoration: none;
+    color: var(--accents-1);
+  }
+  
+  /*===== end header code =====*/
+
+
+  /* =====CARDS SECTION CODE=====*/
+
+
+.projects_section{
+  width: 100%;
+  height: 100%;
+}
+
+.container_cards_class{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: -8rem 0 5rem 0;
+  height: 100%;
+
+}
+
+.card{
+  margin: 7rem 2rem 8rem 1rem;
+
+}
+
+#card_1{
+  width: 40%;
+  height: 60px;
+  position: relative;
+  transition: opacity 200ms ease-in;
+  opacity: 0.9;
+
+}
+
+#card_1 a {
+  text-decoration: none;
+}
+
+
+#a1_link{
+  left: 20%;
+  top: -65%;
+  color: var(--main-2);
+  font-weight: 600;
+  position: absolute;
+  font-size: 1rem;
+  border: 3px solid var(--main-2);
+  padding: 0.3rem;
+  transition: box-shadow 200ms ease-in;
+}
+
+
+#card_1 img {
+  width: 100%;
+  height: 200px;
+}
+
+#card_2{
+  width: 35%;
+  height: 60px;
+  position: relative;
+  opacity: 0.9;
+  transition: opacity 200ms ease-in;
+}
+
+#card_2 a {
+  text-decoration: none;
+}
+
+#card_2 img {
+  width: 100%;
+  height: 200px;
+}
+
+#a2_link{
+  left: 20%;
+  top: -65%;
+  color: var(--main-2);
+  font-weight: 600;
+  position: absolute;
+  font-size: 1rem;
+  border: 2px solid var(--main-2);
+  padding: 0.3rem;
+  transition: box-shadow 200ms ease-in;
+}
+
+
+#card_3{
+  width: 35%;
+  height: 60px;
+  position: relative;
+  opacity: 0.9;
+  transition: opacity 200ms ease-in;
+}
+
+
+#card_3 img {
+  width: 100%;
+  height: 200px;
+}
+
+#card_3 a {
+  text-decoration: none;
+}
+
+#a3_link {
+  left: 20%;
+  top: -65%;
+  color: var(--main-2);
+  font-weight: 600;
+  position: absolute;
+  font-size: 1rem;
+  border: 3px solid var(--main-2);
+  padding: 0.3rem;
+  transition: box-shadow 200ms ease-in;
+}
+
+
+
+#card_4{
+  width: 35%;
+  height: 60px;
+position: relative;
+transition: opacity 200ms ease-in;
+opacity: 0.9;
+
+}
+
+#card_4 a {
+  text-decoration: none;
+}
+
+#a4_link {
+  left: 20%;
+  top: -65%;
+  color: var(--main-2);
+  font-weight: 600;
+  position: absolute;
+  font-size: 1rem;
+  border: 3px solid var(--main-2);
+  padding: 0.3rem;
+  transition: box-shadow 200ms ease-in;
+
+}
+
+
+#card_4 img {
+  width: 100%;
+  height: 200px;
+}
+
+#card_5{
+  width: 35%;
+  height: 60px;
+position: relative;
+transition: opacity 200ms ease-in;
+opacity: 0.9;
+
+}
+
+#card_5 a {
+  text-decoration: none;
+}
+
+#a5_link {
+  left: 20%;
+  top: -65%;
+  color: var(--main-2);
+  font-weight: 600;
+  position: absolute;
+  font-size: 1rem;
+  border: 3px solid var(--main-2);
+  padding: 0.3rem;
+  transition: box-shadow 200ms ease-in;
+}
+
+#card_5 img {
+  width: 100%;
+  height: 200px;
+}
+
+#card_6{
+  width: 35%;
+  height: 60px;
+position: relative;
+transition: opacity 200ms ease-in;
+opacity: 0.9;
+
+}
+
+#card_6 a {
+  text-decoration: none;
+}
+
+#a6_link {
+  left: 20%;
+  top: -65%;
+  color: var(--main-2);
+  font-weight: 600;
+  position: absolute;
+  font-size: 1rem;
+  border: 3px solid var(--main-2);
+  padding: 0.3rem;
+  transition: box-shadow 200ms ease-in;
+}
+
+
+#card_6 img{
+  width: 100%;
+  height: 200px;
+}
+/* =====END CARDS SECTION CODE=====*/
+
+/*===== Footer Code =====*/
+
+.footer_section {
+  width: 100%;
+  height: 90px;
+}
+
+.class_footer {
+  color: var(--accents-3);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+/*===== End Footer Code =====*/
+}

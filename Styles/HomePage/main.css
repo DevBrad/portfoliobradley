@@ -1,0 +1,1159 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  -webkit-transition: background-color 400ms ease-in;
+  transition: background-color 400ms ease-in;
+}
+
+.dark_mode_container {
+  width: 10%;
+  height: 100%;
+  text-align: center;
+  position: fixed;
+  left: 80%;
+}
+
+.dark-mode {
+  background-color: var(--accents-1);
+  -webkit-transition: background-color 500ms ease-in;
+  transition: background-color 500ms ease-in;
+}
+
+.dark-mode #content_header1, .dark-mode .fa-map-marker, .dark-mode .fa-suitcase, .dark-mode .fa-facebook-f, .dark-mode .fa-instagram,
+.dark-mode .fa-linkedin, .dark-mode .fa-camera-retro, .dark-mode .fa-graduation-cap, .dark-mode #school_year, .dark-mode .fa-calendar, .dark-mode .info_school,
+.dark-mode #item1, .dark-mode #item2, .dark-mode #item3, .dark-mode #item4, .dark-mode #item5, .dark-mode #item6, .dark-mode #position_second_job, .dark-mode #company_name, .dark-mode #position_first_job, .dark-mode #fJob_companyName, .dark-mode #objective_content,
+.dark-mode #skills_content, .dark-mode #languages_content, .dark-mode #interests_content, .dark-mode #hobbies_content {
+  color: white;
+}
+
+.dark-mode .jwd, .dark-mode #header3_Professional_experience, .dark-mode #objective_header, .dark-mode #skills_header, .dark-mode #languages_header,
+.dark-mode #interests_header, .dark-mode #hobbies_header, .dark-mode #education_paragraph, .dark-mode .logo-content {
+  color: #0070f3;
+}
+
+.dark-mode #phone_number {
+  color: black;
+}
+
+.dark-mode .fa-phone {
+  color: green;
+}
+
+.dark-mode .fa-pencil {
+  color: orangered;
+}
+
+#paragraph_dark_mode {
+  font-weight: 600;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  margin-right: 0.5rem;
+}
+
+.fa-moon-o {
+  width: 50px;
+  height: 50px;
+}
+
+.night-day {
+  width: 100%;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid var(--main-2);
+  border-radius: 1rem;
+}
+
+.night-day:hover {
+  cursor: pointer;
+}
+
+:root {
+  /*FONTS*/
+  --quarter: 0.25rem;
+  /*4px*/
+  --half: 0.5rem;
+  /*8px*/
+  --default: 1rem;
+  /*16px*/
+  --double: 2rem;
+  /*32px*/
+  --main-font-size: 1.25rem;
+  /*20x*/
+  --generic-font-size: 1.2rem;
+  /*19.2px*/
+  --big-font: 2.8125rem;
+  /*45px*/
+}
+
+/*===== COLORS =====*/
+:root {
+  --accents-1: #111;
+  --accents-2: #333;
+  --accents-3: #555;
+  --accents-4: #777;
+  --accents-5: #999;
+  --main-1: #3291ff;
+  --main-2: #0070f3;
+}
+
+/*===== header code =====*/
+.container_logo {
+  width: 70px;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 4px solid var(--main-2);
+  margin: 3rem 0 0 0;
+  -webkit-transition: -webkit-transform 400ms ease-in;
+  transition: -webkit-transform 400ms ease-in;
+  transition: transform 400ms ease-in;
+  transition: transform 400ms ease-in, -webkit-transform 400ms ease-in;
+  position: relative;
+  -webkit-animation-name: moveLogo;
+          animation-name: moveLogo;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.logo-content {
+  font-weight: 600;
+}
+
+@-webkit-keyframes moveLogo {
+  0% {
+    -webkit-transform: rotate(150deg);
+            transform: rotate(150deg);
+  }
+  25% {
+    -webkit-transform: rotateY(120deg);
+            transform: rotateY(120deg);
+  }
+  50% {
+    -webkit-transform: rotate(320deg);
+            transform: rotate(320deg);
+  }
+  100% {
+    -webkit-transform: rotateX(360deg);
+            transform: rotateX(360deg);
+  }
+}
+
+@keyframes moveLogo {
+  0% {
+    -webkit-transform: rotate(150deg);
+            transform: rotate(150deg);
+  }
+  25% {
+    -webkit-transform: rotateY(120deg);
+            transform: rotateY(120deg);
+  }
+  50% {
+    -webkit-transform: rotate(320deg);
+            transform: rotate(320deg);
+  }
+  100% {
+    -webkit-transform: rotateX(360deg);
+            transform: rotateX(360deg);
+  }
+}
+
+header {
+  width: 85%;
+  height: 110px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size: var(--main-font-size);
+  margin: 0 auto 5rem auto;
+}
+
+nav {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+ul {
+  width: 35%;
+  height: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+li {
+  list-style-type: none;
+  cursor: pointer;
+}
+
+li a {
+  text-decoration: none;
+  color: var(--accents-4);
+}
+
+.item_1 {
+  -webkit-box-flex: 6;
+      -ms-flex: 6;
+          flex: 6;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  position: relative;
+}
+
+.item_1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.2rem;
+  width: 55%;
+  height: 2px;
+  background-color: var(--main-2);
+  -webkit-transition: -webkit-transform 400ms ease-in;
+  transition: -webkit-transform 400ms ease-in;
+  transition: transform 400ms ease-in;
+  transition: transform 400ms ease-in, -webkit-transform 400ms ease-in;
+}
+
+.item_1:hover::after {
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+}
+
+.active {
+  color: var(--main-2);
+  font-weight: 600;
+}
+
+.item_2 {
+  -webkit-box-flex: 5;
+      -ms-flex: 5;
+          flex: 5;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  position: relative;
+}
+
+.item_2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.2rem;
+  width: 65%;
+  height: 2px;
+  background-color: var(--main-2);
+  -webkit-transition: -webkit-transform 400ms ease-in;
+  transition: -webkit-transform 400ms ease-in;
+  transition: transform 400ms ease-in;
+  transition: transform 400ms ease-in, -webkit-transform 400ms ease-in;
+}
+
+.item_2:hover::after {
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+}
+
+.item_3 {
+  -webkit-box-flex: 6;
+      -ms-flex: 6;
+          flex: 6;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  position: relative;
+}
+
+.item_3::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.2rem;
+  width: 68%;
+  height: 2px;
+  background-color: var(--main-2);
+  -webkit-transition: -webkit-transform 400ms ease-in;
+  transition: -webkit-transform 400ms ease-in;
+  transition: transform 400ms ease-in;
+  transition: transform 400ms ease-in, -webkit-transform 400ms ease-in;
+}
+
+.item_3:hover::after {
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+}
+
+.item_4 {
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  position: relative;
+}
+
+.item_4::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.2rem;
+  width: 100%;
+  height: 2px;
+  background-color: var(--main-2);
+  -webkit-transition: -webkit-transform 400ms ease-in;
+  transition: -webkit-transform 400ms ease-in;
+  transition: transform 400ms ease-in;
+  transition: transform 400ms ease-in, -webkit-transform 400ms ease-in;
+}
+
+.item_4:hover::after {
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+}
+
+.item_5 {
+  margin-bottom: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  text-decoration: none;
+  color: var(--accents-1);
+}
+
+.fa-moon-o {
+  font-size: 30px;
+  margin-right: 3rem;
+}
+
+.email_me_btn {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  padding: 0.8rem;
+  margin-left: -90px;
+  cursor: pointer;
+  background-color: white;
+  border: 1px solid var(--main-1);
+  letter-spacing: 0.03rem;
+  font-weight: 500;
+  border-radius: 1rem;
+  outline: none;
+  font-size: 0.9rem;
+  -webkit-transition: background-color 300ms ease-in;
+  transition: background-color 300ms ease-in;
+}
+
+.email_me_btn a {
+  text-decoration: none;
+  color: var(--accents-1);
+}
+
+.email_me_btn:hover {
+  background-color: var(--main-1);
+  -webkit-transition: background-color 200ms ease-in;
+  transition: background-color 200ms ease-in;
+  -webkit-box-shadow: 0 0 20px 2px var(--main-2);
+          box-shadow: 0 0 20px 2px var(--main-2);
+}
+
+.email_me_btn:hover a {
+  color: white;
+}
+
+.email_me_btn:hover i {
+  color: var(--accents-1);
+}
+
+#phone_number {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  padding: 0.75rem;
+  margin: 0 -3rem 0 0.3rem;
+  cursor: pointer;
+  background-color: white;
+  border: 1px solid var(--main-1);
+  letter-spacing: 0.03rem;
+  font-weight: 500;
+  border-radius: 1rem;
+  outline: none;
+  font-size: 0.9rem;
+  -webkit-transition: background-color 200ms ease-in;
+  transition: background-color 200ms ease-in;
+}
+
+#phone_number:hover {
+  background-color: #2ECC71;
+  color: white;
+  border-color: #2ECC71;
+  -webkit-box-shadow: 0 0 20px 2px #2ECC71;
+          box-shadow: 0 0 20px 2px #2ECC71;
+}
+
+#phone_number:hover i {
+  color: var(--accents-1);
+}
+
+/*===== end header code =====*/
+/*===== Presentation section =====*/
+.presentation {
+  width: 100%;
+  padding: 1rem;
+}
+
+.container_presentation {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#personal_img {
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 5px #707880;
+          box-shadow: 0 0 5px #707880;
+}
+
+#personal_img:hover {
+  cursor: pointer;
+  opacity: 0.3;
+}
+
+.container_presentation_img {
+  position: relative;
+  width: 230px;
+  height: 230px;
+  margin: 0 auto;
+  border-radius: 100%;
+  border: 1px solid var(--main-2);
+}
+
+.container_presentation_img:hover .delete {
+  display: block;
+}
+
+.container_presentation_img:hover .add_photo {
+  display: block;
+}
+
+.fa-trash {
+  color: var(--main-2);
+  font-size: 1.5rem;
+}
+
+.fa-trash:hover {
+  cursor: pointer;
+}
+
+.delete {
+  position: absolute;
+  top: 50%;
+  left: 65%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: none;
+}
+
+.add_photo {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: none;
+}
+
+.add_photo:hover {
+  cursor: pointer;
+}
+
+.add_photo i {
+  color: var(--main-2);
+  font-size: 1.5rem;
+}
+
+.container_header_button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#change_content_btn {
+  margin: 1rem 10px 0 10px;
+  padding: 0.3rem;
+  font-size: 1rem;
+}
+
+#change_content_btn:hover {
+  cursor: pointer;
+  color: orangered;
+}
+
+#cancel_content_btn {
+  margin: 3rem 10px 0 10px;
+  padding: 0.3rem;
+  border: 2px solid var(--main-2);
+  background-color: white;
+  font-size: 1rem;
+  opacity: 0.6;
+}
+
+#cancel_content_btn:hover {
+  cursor: pointer;
+  color: var(--main-2);
+  opacity: 1;
+}
+
+.buttons {
+  width: 30%;
+  margin-right: -25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+h1 {
+  font-size: var(--big-font);
+  margin: 40px 20px 0 20px;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  letter-spacing: 0.05rem;
+  /*0.8px*/
+  font-weight: 800;
+  color: var(--accents-1);
+}
+
+h2 {
+  margin: 20.75px auto;
+  color: var(--accents-4);
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size: var(--main-font-size);
+  font-weight: 300;
+  letter-spacing: 0.02rem;
+  width: 900px;
+}
+
+h2 i {
+  color: var(--accents-1);
+  font-weight: 400;
+}
+
+#myName {
+  color: var(--main-2);
+  margin-right: 0.5rem;
+}
+
+#save_newName_btn {
+  width: 100px;
+  padding: 0.2rem;
+  cursor: pointer;
+  margin-top: 0.2rem;
+  display: none;
+}
+
+#newInputName {
+  width: 110px;
+  padding: 7px;
+  border: none;
+  border-bottom: 2px solid #0070f3;
+  margin-top: 0.7rem;
+  display: none;
+}
+
+#editPresentationPencil {
+  margin-left: 47rem;
+  font-size: 1rem;
+}
+
+#content_presentation {
+  width: 500px;
+  height: 150px;
+  resize: none;
+  padding: 1rem;
+  display: none;
+}
+
+#save_new_content_presentation_btn {
+  width: 100px;
+  padding: 0.2rem;
+  cursor: pointer;
+  margin-top: 0.2rem;
+  display: none;
+}
+
+/*===== End Presentation section =====*/
+/*EDUCATION CODE*/
+.section_education {
+  width: 100%;
+  height: 200px;
+}
+
+.container_education {
+  width: 50%;
+  height: 480px;
+  margin: 6rem auto;
+}
+
+.container_header_1 {
+  width: 100%;
+  height: 3.5rem;
+}
+
+.paragraph_1 {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size: var(--double);
+  position: relative;
+}
+
+.paragraph_1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.2rem;
+  width: 40%;
+  height: 2px;
+  background-color: var(--accents-2);
+}
+
+.content {
+  width: 90%;
+  height: 320px;
+}
+
+.container_content {
+  width: 110%;
+  height: 310px;
+}
+
+.period {
+  width: 90%;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 3rem;
+}
+
+.period i {
+  margin: 0 0.5rem 0 0.5rem;
+}
+
+#school_year {
+  margin-right: 20rem;
+}
+
+.school_info {
+  width: 100%;
+  height: 350px;
+}
+
+.edit_info_school {
+  background-color: var(--main-1);
+  width: 350px;
+  height: 450px;
+  position: fixed;
+  top: 35%;
+  left: 67%;
+  display: none;
+  z-index: 99999;
+}
+
+#form_school {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 1.5rem;
+}
+
+#form_school input {
+  width: 250px;
+  padding: 0.2rem;
+  margin: 0.2rem;
+  border: none;
+  border-bottom: 1px solid black;
+  background-color: var(--main-1);
+}
+
+#close_form_school {
+  cursor: pointer;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin: -0.5rem 1rem 0 0;
+}
+
+#save_new_info_school_btn {
+  width: 50px;
+  margin: 1rem 0 0 1rem;
+  cursor: pointer;
+}
+
+.degree_highSchool {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  margin-left: 0.5rem;
+  font-size: 1.2rem;
+  color: var(--main-2);
+  font-weight: 600;
+}
+
+.fa-pencil {
+  color: black;
+  font-size: 0.9rem;
+}
+
+.fa-pencil:hover {
+  cursor: pointer;
+  color: orangered;
+}
+
+.info_school {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  margin: 0.5rem 0 1rem 1.3rem;
+}
+
+.course_program {
+  height: 75%;
+  width: 80%;
+}
+
+.course_program ul li {
+  font-size: 1rem;
+  margin: 0 0 0.4rem 1rem;
+}
+
+.program_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 120%;
+  text-align: left;
+}
+
+#show_editFormSchool {
+  margin-left: 8rem;
+}
+
+/*END EDUCATION CODE*/
+/* ===== HOBBIES SECTION CODE =====*/
+.hobbies_section {
+  width: 50%;
+  height: 100px;
+  margin: 17rem auto;
+}
+
+.hobbies_section p {
+  margin-bottom: 0.5rem;
+}
+
+#header3_Professional_experience {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-weight: 500;
+  color: var(--accents-1);
+  position: relative;
+  margin-bottom: 1rem;
+  font-size: var(--double);
+}
+
+#header3_Professional_experience::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -0.3rem;
+  width: 70%;
+  height: 2px;
+  background-color: var(--accents-2);
+}
+
+#position_first_job, #position_second_job {
+  font-weight: 600;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+#objective_header {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-weight: 600;
+  color: var(--accents-1);
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+#objective_header::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -0.3rem;
+  width: 40%;
+  height: 2px;
+  background-color: var(--accents-2);
+}
+
+#skills_header {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-weight: 600;
+  color: var(--accents-1);
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+#skills_header::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -0.3rem;
+  width: 40%;
+  height: 2px;
+  background-color: var(--accents-2);
+}
+
+#hobbies_header {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-weight: 600;
+  color: var(--accents-1);
+  position: relative;
+}
+
+#hobbies_header::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -0.3rem;
+  width: 40%;
+  height: 2px;
+  background-color: var(--accents-2);
+}
+
+#interests_header {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-weight: 600;
+  color: var(--accents-1);
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+#interests_header::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -0.3rem;
+  width: 40%;
+  height: 2px;
+  background-color: var(--accents-2);
+}
+
+#languages_header {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-weight: 600;
+  color: var(--accents-1);
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+#languages_header::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -0.3rem;
+  width: 40%;
+  height: 2px;
+  background-color: var(--accents-2);
+}
+
+.container_hobbies {
+  width: 90%;
+  height: 100px;
+  margin-top: 1rem;
+}
+
+.html, .css, .js {
+  background-color: #98acc2;
+  padding: 0.3rem;
+  border-radius: 0.1rem;
+}
+
+#show_editProfessionalExperience {
+  margin-left: 10rem;
+}
+
+#container_p_experience {
+  background-color: var(--main-1);
+  width: 320px;
+  height: 250px;
+  position: fixed;
+  top: 40%;
+  left: 70%;
+  display: none;
+  z-index: 99999;
+}
+
+#form_p_experience {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 1rem;
+}
+
+#form_p_experience input {
+  width: 200px;
+  padding: 0.2rem;
+  margin: 0.2rem;
+  border: none;
+  border-bottom: 1px solid black;
+  background-color: var(--main-1);
+}
+
+#close_form_p_experience {
+  cursor: pointer;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin: -0.3rem 1rem 0 0;
+}
+
+#save_form_p_experienceBtn {
+  margin: 1rem 0 0 1rem;
+  cursor: pointer;
+}
+
+#show_editObjective {
+  margin-left: 12rem;
+}
+
+#show_editSkills {
+  margin-left: 14rem;
+}
+
+#show_editLanguages {
+  margin-left: 11rem;
+}
+
+#show_editInterests {
+  margin-left: 12.2rem;
+}
+
+#show_editHobbies {
+  margin-left: 13rem;
+}
+
+#objective_newContent {
+  border: none;
+  border-bottom: 1px solid black;
+  width: 480px;
+  display: none;
+  margin: 1rem 0 1rem 0;
+}
+
+#skills_newContent {
+  border: none;
+  border-bottom: 1px solid black;
+  width: 200px;
+  display: none;
+  margin: 1rem 0 1rem 0;
+}
+
+#languages_newContent {
+  border: none;
+  border-bottom: 1px solid black;
+  display: none;
+  width: 250px;
+  margin: 1rem 0 1rem 0;
+}
+
+#travel_newContent {
+  border: none;
+  border-bottom: 1px solid black;
+  display: none;
+  margin: 1rem 0 1rem 0;
+}
+
+#hobbies_newContent {
+  resize: none;
+  width: 500px;
+  border: none;
+  display: none;
+  border-bottom: 1px solid black;
+  margin: 1rem 0 3rem 0;
+}
+
+#save_objective_newContent, #save_skills_newContent,
+#save_languages_newContent, #save_interests_newContent,
+#save_hobbies_newContent {
+  display: none;
+}
+
+/* ===== END HOBBIES SECTION CODE =====*/
+/*===== Icons Contact Code =====*/
+.contact_icons {
+  width: 70%;
+  height: 200px;
+  margin: 47rem auto auto auto;
+}
+
+.container_contact_icons {
+  width: 80%;
+  height: 60%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.box {
+  width: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 1.8rem;
+}
+
+.box i {
+  font-size: 1.8rem;
+  color: var(--accents-1);
+  outline: none;
+  -webkit-transition: margin-bottom 200ms ease-in;
+  transition: margin-bottom 200ms ease-in;
+}
+
+.box:hover i {
+  margin-bottom: 1rem;
+}
+
+/*===== End Icons Contact Code =====*/
+/*===== SCROLL BACK TO TOP BUTTON CODE =====*/
+.scroll_back_to_top {
+  display: none;
+  position: fixed;
+  bottom: 3rem;
+  right: 3.5rem;
+  z-index: 1;
+  font-size: 1.2rem;
+  border: none;
+  outline: none;
+  background-color: var(--main-2);
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+.scroll_back_to_top:hover {
+  -webkit-box-shadow: 0 0 10px 5px var(--main-2);
+          box-shadow: 0 0 10px 5px var(--main-2);
+}
+
+/*===== END SCROLL BACK TO TOP BUTTON CODE =====*/
+/*===== Footer Code =====*/
+.footer_section {
+  width: 100%;
+  height: 50px;
+}
+
+.class_footer {
+  color: var(--accents-3);
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.1rem;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+/*===== End Footer Code =====*/
+/*# sourceMappingURL=main.css.map */

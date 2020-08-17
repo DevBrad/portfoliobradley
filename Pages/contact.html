@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Font Awesome Link-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <!--Google Fonts Link-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../Styles/ContactPage/contact.css" />
+    <link rel="stylesheet" href="/Responsive/contact.css">
+    <title>Mirel Mandrut's | Portfolio</title>
+  </head>
+  <body id="body">
+    <!--===== HEADER CODE =====-->
+      <header id="header">
+         <div class="container_logo">
+        <p class="logo-content">MM</p>
+      </div>
+        <nav>
+          <ul>
+            <li class="item_1"><a id="item_home" href="/Pages/index.html">Home</a></li>
+            <li class="item_2"><a href="/Pages/about.html">About</a></li>
+            <li class="item_3"><a href="/Pages/projects.html">Projects</a></li>
+            <li class="item_4"><a id="item_contact" href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <button class="email_me_btn">
+          <a href="mailto:mirelmandrut94@yahoo.com"
+            >Email me <i class="fa fa-envelope"></i
+          ></a>
+        </button>
+      </header>
+      <!--===== END HEADER CODE =====-->
+
+    <!-- ===== CONTACT ME SECTION CODE ===== -->
+    <div class="dark_mode_container">
+      <a class="item_5" href="#"><img class="fa-moon-o" src="/images/sun.png" alt=""></a>
+      <div class="night-day"><p id="paragraph_dark_mode">dark mode</p></div>
+    </div>
+    <section class="contactMe_section">
+      <div class="container_contactMe">
+        <div class="container_header">
+          <h1 class="header1_class">Get In Touch</h1>
+        </div>
+        <div class="container_form">
+          <form action="mailTo:mirelmandrut94@yahoo.com" id="my_Form">
+            <div class="name_input_container">
+              <i class="fa fa-user"></i>
+              <input type="text" id='input_name' placeholder="your name" /> <br>
+            </div>
+            <p id="error_name">name must contain at least 8 characters! numbers/white spaces and special characters are not allowed</p>
+            <div class="email_input_container"> 
+              <i id="envelope" class="fa fa-envelope"></i>
+              <input type='email' id='input_email' placeholder='example@example.com'>
+            </div>
+            <p id="error_email">email must be in the following order: example@example. + after the . add at least 2 letters</p>
+            <div class="reset_input">
+              <a id="reset_input_value" href="#">reset</a>
+            </div>
+          <button id='submit_btn' type='submit'>submit</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- ===== END CONTACT ME SECTION CODE ===== -->
+     <!--ICONS CONTAINER CODE =====-->
+     <div class="container_card_icons"></div>
+
+     <!-- END ICONS CONTAINER CODE ===== -->
+    
+ <!-- FOOTER SECTION CODE -->
+
+ <section class="footer_section">
+  <footer id="footer"></footer>
+</section>
+
+ <!-- END FOOTER SECTION CODE -->
+    <script src="../JavaScripts/ContactPage/contact.js"></script>
+    <script src="../common js/headerContact.js"></script>
+    <script src="../common js/footer.js"></script>
+  </body>
+</html>

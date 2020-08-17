@@ -1,0 +1,400 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  transition: background-color 400ms ease-in;
+}
+
+.dark_mode_container{
+  width: 10%;
+  height: 100%;
+  text-align: center;
+  position: fixed;
+  left: 83%;
+  top: 17%;
+}
+
+
+.dark-mode{
+  background-color: var(--accents-1);
+  color: white;
+}
+
+#paragraph_dark_mode{
+  font-weight: 600;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  margin-right: 0.5rem;
+}
+
+.fa-moon-o {
+  width: 50px;
+  height: 50px;
+}
+
+.night-day{
+  width:100%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--main-2);
+  border-radius: 1rem;
+  margin-top: 1.5rem;
+}
+
+.night-day:hover{
+  cursor: pointer;
+}
+
+
+:root {
+  /*FONTS*/
+  --quarter: 0.25rem; /*4px*/
+  --half: 0.5rem; /*8px*/
+  --default: 1rem; /*16px*/
+  --double: 2rem; /*32px*/
+  --main-font-size: 1.25rem; /*20x*/
+  --generic-font-size: 1.2rem; /*19.2px*/
+  --big-font: 2.8125rem; /*45px*/
+}
+/*===== COLORS =====*/
+:root {
+  --accents-1: #111;
+  --accents-2: #333;
+  --accents-3: #555;
+  --accents-4: #777;
+  --accents-5: #999;
+  --main-1: #3291ff;
+  --main-2: #0070f3;
+}
+
+
+.active{
+  color: var(--main-2);
+}
+
+/*===== header code =====*/
+.container_logo{
+  width: 70px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 4px solid var(--main-2);
+  margin: 3rem 0 0 0 ;
+  transition: transform 400ms ease-in;
+  position: relative;
+  animation-name: moveLogo;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+.logo-content{
+  font-weight: 600;
+}
+
+
+@keyframes moveLogo {
+  0%   {transform: rotate(150deg)}
+  25%  {transform: rotateY(120deg)}
+  50%  {transform: rotate(320deg)}
+  100% {transform: rotateX(360deg)}
+}
+
+body{
+  overflow: hidden;
+}
+
+header {
+    width: 85%;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+      Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-size: var(--main-font-size);
+    margin: 0 auto 50px auto;
+  }
+  
+  nav {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+  }
+  
+  ul {
+    width: 35%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+  li {
+    list-style-type: none;
+    cursor: pointer;
+  }
+  
+  li a {
+    text-decoration: none;
+    color: var(--accents-4);
+  }
+  
+  .item_1 {
+    flex: 6;
+    align-self: flex-end;
+    position: relative;
+  }
+
+  .item_1::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -0.2rem;
+    width: 55%;
+    height: 2px;
+    background-color: var(--main-2);
+    transition: transform 400ms ease-in;
+  }
+  
+  .item_1:hover::after {
+    transform: scaleX(0);
+  }
+  
+  .active {
+    color: var(--main-2);
+    font-weight: 600;
+  }
+  
+  .item_2 {
+    flex: 5;
+    align-self: flex-end;
+    position: relative;
+   
+  }
+  
+  .item_2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -0.2rem;
+    width: 65%;
+    height: 2px;
+    background-color: var(--main-2);
+    transition: transform 400ms ease-in;
+  }
+  
+  .item_2:hover::after {
+    transform: scaleX(0);
+  }
+  
+  .item_3 {
+    flex: 6;
+    align-self: flex-end;
+    position: relative;
+  }
+  
+  .item_3::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -0.2rem;
+    width: 68%;
+    height: 2px;
+    background-color: var(--main-2);
+    transition: transform 400ms ease-in;
+  }
+  
+  .item_3:hover::after {
+    transform: scaleX(0);
+  }
+  
+  .item_4 {
+    flex: 4;
+    align-self: flex-end;
+    position: relative;
+  }
+  
+  .item_4::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -0.2rem;
+    width: 100%;
+    height: 2px;
+    background-color: var(--main-2);
+    transition: transform 400ms ease-in;
+  }
+  
+  .item_4:hover::after {
+    transform: scaleX(0);
+  }
+  
+  .email_me_btn {
+    align-self: flex-end;
+    padding: 0.8rem;
+    margin-left: -90px;
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid var(--main-1);
+    letter-spacing: 0.03rem;
+    font-weight: 500;
+    border-radius: 1rem;
+    outline: none;
+    font-size: 1rem;
+    transition: background-color 300ms ease-in;
+  }
+  
+  .email_me_btn a {
+    text-decoration: none;
+    color: var(--accents-1);
+  }
+  
+  .email_me_btn:hover {
+    background-color: var(--main-1);
+    transition: background-color 200ms ease-in;
+    box-shadow: 0 0 20px 2px var(--main-2);
+  }
+  
+  .email_me_btn:hover a {
+    color: white;
+  }
+  /*===== end header code =====*/
+  
+
+  /*About me section code */
+
+#container{
+ display: flex;
+ align-items: center;
+}
+
+  .container_about_me{
+      width: 50%;
+      height: 320px;
+      margin-left: 5rem;
+  }
+  
+  .header1_about_me{
+    margin-bottom: 1rem;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    font-size: 2rem;
+  }
+
+.header1_about_me::after{
+  content: "";
+  position: absolute;
+  left: -2rem;
+  top: -0.25rem;
+  bottom: -0.25rem;
+  width: calc(100% + 4rem);
+  background: var(--main-2);
+  z-index: -1;
+  transform: scaleX(0.075);
+  transform-origin: left;
+  transition: transform 250ms ease-in;
+}
+
+  .header1_about_me_class{
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  }
+
+
+.header1_about_me::after{
+  transform: scaleX(1);
+}
+
+.p1_about_me{
+  position: relative;
+  z-index: 1;
+  color: transparent;
+  margin: 0 0 0 1rem;
+  transition: color 0.5s ease-in;
+  width: 80%;
+  font-weight: 500;
+  font-size: var(--generic-font-size);
+  line-height: 1.9rem;
+}
+
+.p1_about_me::after{
+  content: "";
+  position: absolute;
+  top: -0.75rem;
+  bottom: -0.75rem;
+  left: -0.75rem;
+  right: -0.75rem;
+  background: #fefedf;
+  z-index: -1;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 250ms ease-in;
+  transition-delay: 250ms;
+}
+
+.p1_about_me::after {
+  transform: scaleY(1);
+}
+
+.p1_about_me {
+  transition: color 1s ease-in;
+  color: #333;
+}
+   /* End About me section code */
+
+   .upperCase{
+     font-weight: 600;
+     font-size: 1.4rem;
+
+   }
+
+   /*=====SLIDER IMAGES CODE =====*/
+
+.slider{
+  margin: 5rem 0 1rem 1rem;
+}
+
+.container_slide_images_about_me{
+     max-width: 1005;
+     margin: 0 auto;
+}
+
+ img {
+     width: 75%;
+     height: 450px;
+     margin: 0 auto;
+}
+
+      /*===== END SLIDER IMAGES CODE =====*/
+
+/*===== Footer Code =====*/
+
+.footer_section {
+  width: 100%;
+  height: 50px;
+  //   background-color: rgb(195, 84, 84);
+}
+
+.class_footer {
+  color: var(--accents-3);
+  width: 100%;
+  //   background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+/*===== End Footer Code =====*/

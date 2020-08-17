@@ -1,0 +1,243 @@
+@media only screen and (max-width: 415px) { 
+
+
+    main{
+        width: 97%;
+        margin: 1rem auto;
+        background-color: white;
+        box-shadow: 0 0 20px 10px var(--main-1);
+      }
+
+/*===== header code =====*/
+.container_logo{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid var(--main-2);
+    margin: 3rem 0 0 0 ;
+    transition: transform 400ms ease-in;
+    position: relative;
+  }
+    
+  .logo-content{
+    font-weight: 500;
+    font-size: 12px;
+  }
+  
+  
+  header {
+    width: 85%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+      Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-size: var(--main-font-size);
+    margin: 0 auto 100px auto;
+  }
+  
+  nav {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+  }
+  
+  ul {
+ 
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* background-color: red; */
+  }
+  
+  li {
+    list-style-type: none;
+    cursor: pointer;
+  }
+  
+  li a {
+    text-decoration: none;
+    color: var(--accents-4);
+    font-size: 0.8rem;
+    margin-right: 0.1rem;
+  }
+  
+  .item_1 {
+    flex: 6;
+    align-self: flex-end;
+    position: relative;
+  }
+  .item_1::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -0.2rem;
+    width: 55%;
+    height: 1px;
+    background-color: var(--main-2);
+    transition: transform 400ms ease-in;
+  }
+  
+  
+  .active {
+    color: var(--main-2);
+    font-weight: 600;
+  }
+  
+  .item_2 {
+    flex: 5;
+    align-self: flex-end;
+    position: relative;
+  }
+  
+  .item_2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -0.2rem;
+    width: 65%;
+    height: 1px;
+    background-color: var(--main-2);
+    transition: transform 400ms ease-in;
+  }
+  
+  
+  .item_3 {
+    flex: 6;
+    align-self: flex-end;
+    position: relative;
+  }
+  
+  .item_3::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -0.2rem;
+    width: 68%;
+    height: 1px;
+    background-color: var(--main-2);
+    transition: transform 400ms ease-in;
+  }
+  
+
+  
+  .item_4 {
+    flex: 4;
+    align-self: flex-end;
+    position: relative;
+  }
+  
+  .item_4::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -0.2rem;
+    width: 100%;
+    height: 1px;
+    background-color: var(--main-2);
+    transition: transform 400ms ease-in;
+  }
+  
+  
+  .email_me_btn {
+    align-self: center;
+    padding: 0.3rem;
+    margin-left: -90px;
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid var(--main-1);
+    letter-spacing: 0.03rem;
+    font-weight: 500;
+    border-radius: 1rem;
+    outline: none;
+    font-size: 0.5rem;
+    transition: background-color 300ms ease-in;
+    display: none;
+  }
+  
+  .email_me_btn a {
+    text-decoration: none;
+    color: var(--accents-1);
+  }
+  
+  /*===== end header code =====*/
+
+ /*About me section code */
+
+
+ .container_about_me{
+        width: 85%;
+        height: 100%;
+        margin: 0 auto;  
+    }
+    
+  
+    .header1_about_me{
+      margin-bottom: 1rem;
+      background-color: #0070f3;
+      padding: 0.5rem;
+    }
+
+    .header1_about_me::after{
+      content: "";
+      position: absolute;
+      left: -2rem;
+      top: -0.25rem;
+      bottom: -0.25rem;
+      width: 0;
+      background: var(--main-2);
+ 
+    }
+
+  
+    .header1_about_me_class{
+      font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+      Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    }
+  
+  
+  .p1_about_me{
+    margin: 0 0 0 0.1rem;
+    width: 95%;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.3rem;
+    color: black;
+    background-color: rgb(211, 216, 200);
+  }
+
+
+  .upperCase{
+    font-weight: 600;
+    font-size: 1.4rem;
+
+  }
+  
+  
+     /* End About me section code */
+
+        /*=====SLIDER IMAGES CODE =====*/
+
+.slider{
+  margin: 3rem 0 2rem 0;
+}
+
+   .container_slide_images_about_me{
+     max-width: 500px;
+     margin: 0 auto;
+   }
+
+ img {
+     width: 65%;
+     height: 300px;
+     margin: 0 auto;
+   }
+
+      /*===== END SLIDER IMAGES CODE =====*/
+
+}

@@ -1,0 +1,634 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  -webkit-transition: background-color 400ms ease-in;
+  transition: background-color 400ms ease-in;
+}
+
+.dark_mode_container {
+  width: 10%;
+  height: 100%;
+  text-align: center;
+  position: fixed;
+  left: 84%;
+  top: 18%;
+}
+
+.dark-mode {
+  background-color: var(--accents-1);
+  color: white;
+}
+
+.dark-mode .fa-facebook, .dark-mode .fa-instagram, .dark-mode .fa-linkedin, .dark-mode .fa-camera-retro {
+  color: white;
+}
+
+#paragraph_dark_mode {
+  font-weight: 600;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  margin-right: 0.5rem;
+}
+
+.fa-moon-o {
+  width: 50px;
+  height: 50px;
+}
+
+.night-day {
+  width: 100%;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid var(--main-2);
+  border-radius: 1rem;
+  margin: 1.5rem 0 2.5rem 0;
+}
+
+.night-day:hover {
+  cursor: pointer;
+}
+
+:root {
+  /*FONTS*/
+  --quarter: 0.25rem;
+  /*4px*/
+  --half: 0.5rem;
+  /*8px*/
+  --default: 1rem;
+  /*16px*/
+  --double: 2rem;
+  /*32px*/
+  --main-font-size: 1.25rem;
+  /*20x*/
+  --generic-font-size: 1.2rem;
+  /*19.2px*/
+  --big-font: 2.8125rem;
+  /*45px*/
+}
+
+/*===== COLORS =====*/
+:root {
+  --accents-1: #111;
+  --accents-2: #333;
+  --accents-3: #555;
+  --accents-4: #777;
+  --accents-5: #999;
+  --main-1: #3291ff;
+  --main-2: #0070f3;
+}
+
+/*===== header code =====*/
+.active {
+  color: var(--main-2);
+  font-weight: 600;
+}
+
+.container_logo {
+  width: 70px;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 4px solid var(--main-2);
+  margin: 3rem 0 0 0;
+  -webkit-transition: -webkit-transform 400ms ease-in;
+  transition: -webkit-transform 400ms ease-in;
+  transition: transform 400ms ease-in;
+  transition: transform 400ms ease-in, -webkit-transform 400ms ease-in;
+  position: relative;
+  -webkit-animation-name: moveLogo;
+          animation-name: moveLogo;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.logo-content {
+  font-weight: 600;
+}
+
+@-webkit-keyframes moveLogo {
+  0% {
+    -webkit-transform: rotate(150deg);
+            transform: rotate(150deg);
+  }
+  25% {
+    -webkit-transform: rotateY(120deg);
+            transform: rotateY(120deg);
+  }
+  50% {
+    -webkit-transform: rotate(320deg);
+            transform: rotate(320deg);
+  }
+  100% {
+    -webkit-transform: rotateX(360deg);
+            transform: rotateX(360deg);
+  }
+}
+
+@keyframes moveLogo {
+  0% {
+    -webkit-transform: rotate(150deg);
+            transform: rotate(150deg);
+  }
+  25% {
+    -webkit-transform: rotateY(120deg);
+            transform: rotateY(120deg);
+  }
+  50% {
+    -webkit-transform: rotate(320deg);
+            transform: rotate(320deg);
+  }
+  100% {
+    -webkit-transform: rotateX(360deg);
+            transform: rotateX(360deg);
+  }
+}
+
+header {
+  width: 85%;
+  height: 110px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size: var(--main-font-size);
+  margin: 0 auto 70px auto;
+}
+
+nav {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+ul {
+  width: 35%;
+  height: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+li {
+  list-style-type: none;
+  cursor: pointer;
+}
+
+li a {
+  text-decoration: none;
+  color: var(--accents-4);
+}
+
+.item_1 {
+  -webkit-box-flex: 6;
+      -ms-flex: 6;
+          flex: 6;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  position: relative;
+}
+
+.item_1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.2rem;
+  width: 55%;
+  height: 2px;
+  background-color: var(--main-2);
+  -webkit-transition: -webkit-transform 400ms ease-in;
+  transition: -webkit-transform 400ms ease-in;
+  transition: transform 400ms ease-in;
+  transition: transform 400ms ease-in, -webkit-transform 400ms ease-in;
+}
+
+.item_1:hover::after {
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+}
+
+.active {
+  color: var(--main-2);
+  font-weight: 600;
+}
+
+.item_2 {
+  -webkit-box-flex: 5;
+      -ms-flex: 5;
+          flex: 5;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  position: relative;
+}
+
+.item_2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.2rem;
+  width: 65%;
+  height: 2px;
+  background-color: var(--main-2);
+  -webkit-transition: -webkit-transform 400ms ease-in;
+  transition: -webkit-transform 400ms ease-in;
+  transition: transform 400ms ease-in;
+  transition: transform 400ms ease-in, -webkit-transform 400ms ease-in;
+}
+
+.item_2:hover::after {
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+}
+
+.item_3 {
+  -webkit-box-flex: 6;
+      -ms-flex: 6;
+          flex: 6;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  position: relative;
+}
+
+.item_3::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.2rem;
+  width: 68%;
+  height: 2px;
+  background-color: var(--main-2);
+  -webkit-transition: -webkit-transform 400ms ease-in;
+  transition: -webkit-transform 400ms ease-in;
+  transition: transform 400ms ease-in;
+  transition: transform 400ms ease-in, -webkit-transform 400ms ease-in;
+}
+
+.item_3:hover::after {
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+}
+
+.item_4 {
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  position: relative;
+}
+
+.item_4::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.2rem;
+  width: 100%;
+  height: 2px;
+  background-color: var(--main-2);
+  -webkit-transition: -webkit-transform 400ms ease-in;
+  transition: -webkit-transform 400ms ease-in;
+  transition: transform 400ms ease-in;
+  transition: transform 400ms ease-in, -webkit-transform 400ms ease-in;
+}
+
+.item_4:hover::after {
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+}
+
+.email_me_btn {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  padding: 0.8rem;
+  margin-left: -90px;
+  cursor: pointer;
+  background-color: white;
+  border: 1px solid var(--main-1);
+  letter-spacing: 0.03rem;
+  font-weight: 500;
+  border-radius: 1rem;
+  outline: none;
+  font-size: 1rem;
+  -webkit-transition: background-color 300ms ease-in;
+  transition: background-color 300ms ease-in;
+}
+
+.email_me_btn a {
+  text-decoration: none;
+  color: var(--accents-1);
+}
+
+.email_me_btn:hover {
+  background-color: var(--main-1);
+  -webkit-transition: background-color 200ms ease-in;
+  transition: background-color 200ms ease-in;
+  -webkit-box-shadow: 0 0 20px 2px var(--main-2);
+          box-shadow: 0 0 20px 2px var(--main-2);
+}
+
+.email_me_btn:hover a {
+  color: white;
+}
+
+/*===== end header code =====*/
+.active {
+  color: var(--main-2);
+  font-weight: 600;
+}
+
+/* ===== CONTACT ME CODE =====*/
+.contactMe_section {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.container_contactMe {
+  width: 80%;
+  height: 450px;
+  border: 4px solid var(--main-2);
+  margin: 0 auto;
+  border-radius: 0.3rem;
+}
+
+.container_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  letter-spacing: 1px;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  border-bottom: 1px solid var(--main-2);
+  height: 70px;
+  background-color: #1477e9;
+}
+
+.container_form {
+  width: 50%;
+  height: 300px;
+  margin: 1rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#input_name {
+  width: 320px;
+  padding: 1rem;
+  margin-top: 6rem;
+  position: relative;
+}
+
+#input_email {
+  width: 320px;
+  padding: 1rem;
+  margin-top: 0.7rem;
+  position: relative;
+}
+
+#your_message {
+  width: 300px;
+  height: 150px;
+  margin-top: 0.8rem;
+}
+
+#submit_btn {
+  width: 110px;
+  padding: 0.6rem;
+  margin: 1rem 0 5rem 0;
+  position: relative;
+  z-index: 1;
+  border: 2px solid var(--main-1);
+  font-weight: 600;
+  font-size: 1rem;
+  background-color: white;
+}
+
+#submit_btn:hover {
+  cursor: pointer;
+  color: white;
+  -webkit-box-shadow: 0 0 20px 2px var(--main-2);
+          box-shadow: 0 0 20px 2px var(--main-2);
+}
+
+#submit_btn::after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: var(--main-2);
+  top: 0;
+  left: 0;
+  -webkit-transition: -webkit-transform 250ms ease-in;
+  transition: -webkit-transform 250ms ease-in;
+  transition: transform 250ms ease-in;
+  transition: transform 250ms ease-in, -webkit-transform 250ms ease-in;
+  z-index: -1;
+}
+
+#submit_btn::after {
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: right;
+          transform-origin: right;
+}
+
+#submit_btn:hover::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+.header1_class i {
+  margin-left: 1rem;
+}
+
+/* ===== END CONTACT ME CODE =====*/
+/*INPUT VALIDATIN CODE*/
+.name_input_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.email_input_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#envelope {
+  position: absolute;
+  margin: 0.5rem 0.5rem 0 0;
+  z-index: 1;
+}
+
+.fa-user {
+  position: absolute;
+  margin: 6rem 0.5rem 0 0;
+  z-index: 1;
+}
+
+.reset_input a {
+  text-decoration: none;
+  color: var(--main-2);
+  margin-left: 0.3rem;
+}
+
+#error_name {
+  background-color: #f05a5a;
+  width: 320px;
+  margin: 0.2rem 0 0.3rem 0;
+  padding: 0.3rem;
+  display: none;
+}
+
+#error_email {
+  background-color: #f05a5a;
+  width: 320px;
+  margin: 0.2rem 0 0.3rem 0;
+  padding: 0.3rem;
+  display: none;
+}
+
+/* END INPUT VALIDATIN CODE*/
+/*ICONS CONTAINER CODE =====*/
+.class_container_card_icons {
+  width: 500px;
+  height: 100px;
+  margin: 1rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card {
+  width: 50px;
+  height: 50px;
+  margin-right: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 2px solid var(--main-2);
+  border-radius: 50%;
+  -webkit-transition: -webkit-box-shadow 200ms ease-in;
+  transition: -webkit-box-shadow 200ms ease-in;
+  transition: box-shadow 200ms ease-in;
+  transition: box-shadow 200ms ease-in, -webkit-box-shadow 200ms ease-in;
+  -webkit-transition: border 200ms ease-in;
+  transition: border 200ms ease-in;
+  padding: 1.6rem;
+}
+
+.card:hover {
+  -webkit-box-shadow: 0 0 10px 5px var(--main-2);
+          box-shadow: 0 0 10px 5px var(--main-2);
+  cursor: pointer;
+  border: none;
+}
+
+.card a {
+  color: var(--accents-1);
+}
+
+.card i {
+  font-size: 1.5rem;
+}
+
+/*END ICONS CONTAINER CODE =====*/
+/*===== Footer Code =====*/
+.footer_section {
+  width: 100%;
+  height: 50px;
+}
+
+.class_footer {
+  color: var(--accents-3);
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.1rem;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+/*===== End Footer Code =====*/
+/*# sourceMappingURL=contact.css.map */
