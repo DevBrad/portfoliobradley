@@ -52,7 +52,7 @@
           <h1 class="header1_class">Get In Touch</h1>
         </div>
         <div class="container_form">
-          <form action="mailTo:mirelmandrut94@yahoo.com" id="my_Form">
+          <form action="" id="my_Form">
             <div class="name_input_container">
               <i class="fa fa-user"></i>
               <input type="text" id='input_name' placeholder="your name" /> <br>
@@ -63,6 +63,7 @@
               <input type='email' id='input_email' placeholder='example@example.com'>
             </div>
             <p id="error_email">email must be in the following order: example@example. + after the . add at least 2 letters</p>
+            <textarea id="message"></textarea>
             <div class="reset_input">
               <a id="reset_input_value" href="#">reset</a>
             </div>
@@ -87,5 +88,6 @@
     <script src="../JavaScripts/ContactPage/contact.js"></script>
     <script src="../common js/headerContact.js"></script>
     <script src="../common js/footer.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>
   </body>
 </html>

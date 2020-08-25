@@ -42,8 +42,9 @@ if(!document.getElementById('input_email').value.match(_validEmail)){
 }
 
 if(document.getElementById('input_name').value.match(_validUserName) && (document.getElementById('input_email').value.match(_validEmail))){
-  window.location.href = 'mailTo:mirelmandrut94@yahoo.com'
-} 
+  sendEmail()
+//   window.location.href = 'mailTo:mirelmandrut94@yahoo.com'
+ } 
 }
 
 // END INPUT VALIDATION CODE 
@@ -115,3 +116,34 @@ function darkMode(){
   }
 }
 // END DARK MODE CODE
+
+//SEND EMAIL CODE
+function sendEmail() {
+  (function () {
+      emailjs.init("user_Nl5wfLKoSnXufsMT8bsdA");
+  })();
+
+
+
+  let name = document.getElementById('input_name').value;
+  let from = document.getElementById('input_email').value;
+  let message = document.getElementById('message').value;
+
+
+  var templateParams = {
+      to_name: name,
+      from_name: from,
+      message_html: message,
+      person_name: name
+  };
+
+  // send request
+  emailjs.send('gmail','template_dTtINCkM',templateParams)
+      .then(function (response) {
+          console.log('SUCCESS!', response.status, response.text);
+          alert('email was sent')
+      }, function (error) {
+          console.log('FAILED :(', error);
+      });
+}
+//END SEND EMAIL CODE

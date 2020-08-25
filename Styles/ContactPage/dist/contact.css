@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
-
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +10,7 @@ body {
   transition: background-color 400ms ease-in;
 }
 
-.dark_mode_container{
+.dark_mode_container {
   width: 10%;
   height: 100%;
   text-align: center;
@@ -20,19 +19,17 @@ body {
   top: 18%;
 }
 
-.dark-mode{
+.dark-mode {
   background-color: var(--accents-1);
   color: white;
-
-  .fa-facebook,.fa-instagram,.fa-linkedin,.fa-camera-retro{
-    color: white;
-  }
+}
+.dark-mode .fa-facebook, .dark-mode .fa-instagram, .dark-mode .fa-linkedin, .dark-mode .fa-camera-retro {
+  color: white;
 }
 
-#paragraph_dark_mode{
+#paragraph_dark_mode {
   font-weight: 600;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   margin-right: 0.5rem;
 }
 
@@ -41,8 +38,8 @@ body {
   height: 50px;
 }
 
-.night-day{
-  width:100%;
+.night-day {
+  width: 100%;
   height: 30px;
   display: flex;
   align-items: center;
@@ -58,14 +55,22 @@ body {
 
 :root {
   /*FONTS*/
-  --quarter: 0.25rem; /*4px*/
-  --half: 0.5rem; /*8px*/
-  --default: 1rem; /*16px*/
-  --double: 2rem; /*32px*/
-  --main-font-size: 1.25rem; /*20x*/
-  --generic-font-size: 1.2rem; /*19.2px*/
-  --big-font: 2.8125rem; /*45px*/
+  --quarter: 0.25rem;
+  /*4px*/
+  --half: 0.5rem;
+  /*8px*/
+  --default: 1rem;
+  /*16px*/
+  --double: 2rem;
+  /*32px*/
+  --main-font-size: 1.25rem;
+  /*20x*/
+  --generic-font-size: 1.2rem;
+  /*19.2px*/
+  --big-font: 2.8125rem;
+  /*45px*/
 }
+
 /*===== COLORS =====*/
 :root {
   --accents-1: #111;
@@ -82,14 +87,15 @@ body {
   color: var(--main-2);
   font-weight: 600;
 }
-.container_logo{
+
+.container_logo {
   width: 70px;
   height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
   border: 4px solid var(--main-2);
-  margin: 3rem 0 0 0 ;
+  margin: 3rem 0 0 0;
   transition: transform 400ms ease-in;
   position: relative;
   animation-name: moveLogo;
@@ -97,24 +103,30 @@ body {
   animation-iteration-count: infinite;
 }
 
-.logo-content{
+.logo-content {
   font-weight: 600;
 }
 
 @keyframes moveLogo {
-  0%   {transform: rotate(150deg)}
-  25%  {transform: rotateY(120deg)}
-  50%  {transform: rotate(320deg)}
-  100% {transform: rotateX(360deg)}
+  0% {
+    transform: rotate(150deg);
+  }
+  25% {
+    transform: rotateY(120deg);
+  }
+  50% {
+    transform: rotate(320deg);
+  }
+  100% {
+    transform: rotateX(360deg);
+  }
 }
-
 header {
   width: 85%;
   height: 110px;
   display: flex;
   align-items: center;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-size: var(--main-font-size);
   margin: 0 auto 70px auto;
 }
@@ -149,6 +161,7 @@ li a {
   align-self: flex-end;
   position: relative;
 }
+
 .item_1::after {
   content: "";
   position: absolute;
@@ -263,20 +276,19 @@ li a {
 }
 
 /*===== end header code =====*/
-
 .active {
-    color: var(--main-2);
-    font-weight: 600;
-  }
+  color: var(--main-2);
+  font-weight: 600;
+}
 
 /* ===== CONTACT ME CODE =====*/
-.contactMe_section{
+.contactMe_section {
   width: 80%;
   height: 100%;
   margin: 0 auto;
 }
 
-.container_contactMe{
+.container_contactMe {
   width: 80%;
   height: 550px;
   border: 4px solid var(--main-2);
@@ -284,20 +296,18 @@ li a {
   border-radius: 0.3rem;
 }
 
-.container_header{
+.container_header {
   display: flex;
   align-items: center;
   justify-content: center;
   letter-spacing: 1px;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   border-bottom: 1px solid var(--main-2);
   height: 100px;
   background-color: #1477e9;
 }
 
-
-.container_form{
+.container_form {
   width: 50%;
   height: 300px;
   margin: 4rem auto;
@@ -312,24 +322,22 @@ li a {
   padding: 1rem;
   margin-top: 6rem;
   position: relative;
- 
 }
 
-
-#input_email{
+#input_email {
   width: 320px;
   padding: 1rem;
   margin-top: 0.7rem;
   position: relative;
 }
 
-#your_message{
+#your_message {
   width: 300px;
   height: 150px;
   margin-top: 0.8rem;
 }
 
-#submit_btn{
+#submit_btn {
   width: 110px;
   padding: 0.6rem;
   margin: 1rem 0 5rem 0;
@@ -341,7 +349,7 @@ li a {
   background-color: white;
 }
 
-#submit_btn:hover{
+#submit_btn:hover {
   cursor: pointer;
   color: white;
   box-shadow: 0 0 20px 2px var(--main-2);
@@ -349,18 +357,17 @@ li a {
 
 #submit_btn::after {
   position: absolute;
-  content: '';
- width: 100%;
+  content: "";
+  width: 100%;
   height: 100%;
   background-color: var(--main-2);
   top: 0;
   left: 0;
   transition: transform 250ms ease-in;
- z-index: -1;
-
+  z-index: -1;
 }
 
-#submit_btn::after{
+#submit_btn::after {
   transform: scaleX(0);
   transform-origin: right;
 }
@@ -368,47 +375,42 @@ li a {
 #submit_btn:hover::after {
   transform: scaleX(1);
   transform-origin: left;
-
 }
 
-.header1_class i{
+.header1_class i {
   margin-left: 1rem;
 }
 
-#message{
+#message {
   width: 320px;
   margin-top: 0.7rem;
 }
 
 /* ===== END CONTACT ME CODE =====*/
-
 /*INPUT VALIDATIN CODE*/
-.name_input_container{
-display: flex;
-align-items: center;
-justify-content: flex-end;
-
+.name_input_container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
-.email_input_container{
-display: flex;
-align-items: center;
-justify-content: flex-end;
-
+.email_input_container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
-#envelope{
+#envelope {
   position: absolute;
-  margin: 0.5rem 0.5rem 0 0 ;
+  margin: 0.5rem 0.5rem 0 0;
   z-index: 1;
 }
 
-.fa-user{
-  position:absolute;
-  margin: 6rem 0.5rem 0 0 ;
+.fa-user {
+  position: absolute;
+  margin: 6rem 0.5rem 0 0;
   z-index: 1;
 }
-
 
 .reset_input a {
   text-decoration: none;
@@ -416,25 +418,25 @@ justify-content: flex-end;
   margin-left: 0.3rem;
 }
 
-#error_name{
-  background-color: rgb(240, 90, 90);
+#error_name {
+  background-color: #f05a5a;
   width: 320px;
   margin: 0.2rem 0 0.3rem 0;
   padding: 0.3rem;
   display: none;
 }
 
-#error_email{
-  background-color: rgb(240, 90, 90);
+#error_email {
+  background-color: #f05a5a;
   width: 320px;
   margin: 0.2rem 0 0.3rem 0;
   padding: 0.3rem;
   display: none;
 }
+
 /* END INPUT VALIDATIN CODE*/
-
 /*ICONS CONTAINER CODE =====*/
-.class_container_card_icons{
+.class_container_card_icons {
   width: 500px;
   height: 100px;
   margin: 1rem auto;
@@ -443,7 +445,7 @@ justify-content: flex-end;
   justify-content: center;
 }
 
-.card{
+.card {
   width: 50px;
   height: 50px;
   margin-right: 1rem;
@@ -457,25 +459,22 @@ justify-content: flex-end;
   padding: 1.6rem;
 }
 
-.card:hover{
+.card:hover {
   box-shadow: 0 0 10px 5px var(--main-2);
   cursor: pointer;
   border: none;
 }
 
-.card a{
+.card a {
   color: var(--accents-1);
 }
 
-
-.card i{
+.card i {
   font-size: 1.5rem;
 }
 
 /*END ICONS CONTAINER CODE =====*/
-
 /*===== Footer Code =====*/
-
 .footer_section {
   width: 100%;
   height: 50px;
@@ -488,8 +487,7 @@ justify-content: flex-end;
   align-items: center;
   justify-content: center;
   font-size: 1.1rem;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 /*===== End Footer Code =====*/
